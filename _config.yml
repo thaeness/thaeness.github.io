@@ -15,20 +15,20 @@
 # in the templates via {{ site.myvariable }}.
 title: Developers stuff
 email: michel@linuxero.cl
-author: Michel Muñoz
+author: Michel Muñoz F.
 description: >- # this means to ignore newlines until "baseurl:"
-  Cosas de desarrolladores, arquitectura, tecnología, material para primerizos y otra cosas
+  Cosas de desarrolladores, arquitectura, tecnología, material para primerizos y otras cosas
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thaeness.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thaeness
 github_username:  thaeness
-
+linkedin_username: michelmunozfernandez
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
+encoding: utf-8
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
