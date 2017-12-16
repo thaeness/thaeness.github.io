@@ -4,7 +4,7 @@ title: Acerca
 permalink: /acerca/
 ---
 
-Soy Ingeniero Informático del Instituto de Ciencias Tecnológicas CIISA, desde que salí del colegio he trabajado en el área informatica (desde el año
+Soy Ingeniero Informático del Instituto de Ciencias Tecnológicas CIISA, diplomado en Informática, Gestión TI y Arquitectura de Software, desde que salí del colegio he trabajado en el área informatica (desde el año
 2005), he pasado por casi todas las áreas, soporte a usuarios, a clientes, administrador de bases de datos, ingeniero de sistemas, ingeniero de 
 operaciones y hasta he realizado análisis de seguridad informático (ethical hacking). Soy un apasionado de la informática, y desde hace algunos años
 he invertido todos mis esfuerzos al área de desarrollo de software. 
