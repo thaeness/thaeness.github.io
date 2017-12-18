@@ -23,6 +23,7 @@ url: "http://thaeness.github.io" # the base hostname & protocol for your site, e
 twitter_username: thaeness
 github_username:  thaeness
 linkedin_username: michelmunozfernandez
+#comments: true
 # Build settings
 markdown: kramdown
 theme: minima

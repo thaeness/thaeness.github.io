@@ -13,7 +13,7 @@ La idea es simple: comenzar a probar todas las combinaciones de los elementos en
 combinaciones que se pueden dar con los dígitos del 1 al 3 y que el resultado tenga siempre 3 dígitos. Una forma gráfica de ver esto, es en forma de arbol invertido, donde 
 cada paso que se avanza hacia abajo se va acumulando para formar la respuesta final:
 
-[<img src="/assets/backtracking_arbol.png">]
+[<img src="/images/backtracking_arbol.png">]
 
 Cada vez que se llega a una "hoja" del arbol (aquél elemento que no tiene hijos) es una solución, por ejemplo si seguimos el camino desde el inicio, siempre por el lado izquierdo,
 tendremos la solucion 111, que correspondería a la primera solución, mientras que si seguimos el camino por el lado derecho, la combinación obtenida es la 333, correspondiente
@@ -24,7 +24,7 @@ ralizar combinaciones que sabemos que no son parte de la solución o que no van 
 números. Como resultado, al algoritmo se le incluye esta poda, para no realizar iteraciones sobre elementos que no son parte de la solución, por lo que el arbol de las
 posibles combinaciones quedaría así:
 
-[<img src="/assets/backtracking_arbol_poda.png">]
+[<img src="/images/backtracking_arbol_poda.png">]
 
 Las lineas dobles representan la poda, por donde el algoritmo **no va pasar**, omiti algunas lineas porque estaba complicado dibujarlas ahi, pero los elementos los pinté blancos, 
 por ahi tampoco pasa el algoritmo, son parte de la poda. La poda nos permite ahorrar ejecuciones, de forma tal que nuestro algoritmo se vuelva mas eficiente, ya que si comprobamos
