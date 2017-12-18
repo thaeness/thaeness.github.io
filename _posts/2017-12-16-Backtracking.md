@@ -13,7 +13,7 @@ La idea es simple: comenzar a probar todas las combinaciones de los elementos en
 combinaciones que se pueden dar con los dígitos del 1 al 3 y que el resultado tenga siempre 3 dígitos. Una forma gráfica de ver esto, es en forma de arbol invertido, donde 
 cada paso que se avanza hacia abajo se va acumulando para formar la respuesta final:
 
-[<img src="/images/backtracking_arbol.png">]
+<img src="/images/backtracking_arbol.png">
 
 Cada vez que se llega a una "hoja" del arbol (aquél elemento que no tiene hijos) es una solución, por ejemplo si seguimos el camino desde el inicio, siempre por el lado izquierdo,
 tendremos la solucion 111, que correspondería a la primera solución, mientras que si seguimos el camino por el lado derecho, la combinación obtenida es la 333, correspondiente
@@ -24,7 +24,7 @@ ralizar combinaciones que sabemos que no son parte de la solución o que no van 
 números. Como resultado, al algoritmo se le incluye esta poda, para no realizar iteraciones sobre elementos que no son parte de la solución, por lo que el arbol de las
 posibles combinaciones quedaría así:
 
-[<img src="/images/backtracking_arbol_poda.png">]
+<img src="/images/backtracking_arbol_poda.png">
 
 Las lineas dobles representan la poda, por donde el algoritmo **no va pasar**, omiti algunas lineas porque estaba complicado dibujarlas ahi, pero los elementos los pinté blancos, 
 por ahi tampoco pasa el algoritmo, son parte de la poda. La poda nos permite ahorrar ejecuciones, de forma tal que nuestro algoritmo se vuelva mas eficiente, ya que si comprobamos
@@ -85,7 +85,6 @@ Para facilitar el trabajo, al final de este post hay una funcion que convierte u
 ###          #### #### ####### #######             ### ##################### ##### ## ##
 ### ############# ####         ####### ############### ####           ###### ##### ## ##
 ###               ####################                      #########                   
-}
 {% endhighlight %}
 
 Entonces, vamos a crear un algoritmo, usando backtracking, que pueda resolver este (y cualquier otro) laberinto que cumpla estas condiciones:
@@ -118,9 +117,9 @@ En resumen, consiste en programar una función recursiva que:
 2. Bloque de validaciones que verifiquen que la combinación actual es valida, de lo contrario, que "corte" esa ejecución, que no continue por ese camino.
 3. Bloque de Poda, todas las validaciones que sean necesarias para validar que ese camino va por buen rumbo, de lo contrario, al igual que el bloque anterior, que corte las siguientes ejecuciones.
 4. Representado con un FOR (que no necesariamente es asi), el bloque principal, en donde:
-  1. Se "efectua" la combinación, en este ejemplo, avanzar a la siguiente casilla válida en la matriz. 
-  2. Se llama recursivamente a la misma funcion con el siguiente paso.
-  3. Se "deshace" lo que se hizo en el paso uno, la vuelta atras (o backtracking en inglés), para que el algoritmo siga probando los demás caminos.
+    - Se "efectua" la combinación, en este ejemplo, avanzar a la siguiente casilla válida en la matriz. 
+    - Se llama recursivamente a la misma funcion con el siguiente paso.
+    - Se "deshace" lo que se hizo en el paso uno, la vuelta atras (o backtracking en inglés), para que el algoritmo siga probando los demás caminos.
 
 
 Como primer paso, debemos declarar nuestra clase y sus atributos, he decidido llamar a esta clase Laberinto, cuyas propiedades serán una matriz de char,y las variables
